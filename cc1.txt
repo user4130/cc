@@ -1,0 +1,22 @@
+Google cloud sdk->  gcloud init
+
+test.py
+
+import webapp2
+class MainPage(webapp2.RequestHandler):
+  def get(self):
+    self.response.write("Hello World")
+app = webapp2.WSGIApplication([('/',MainPage)],debug=True)
+
+app.py
+
+runtime: python27
+app-version: 1
+threadsafe: false
+handlers:
+-url : /
+script: test.app
+
+
+google cloud sdk-> google-cloud-sdk\bin\dev_appserver.py C:\Users\Saloni\OneDrive\Desktop\lab1
+

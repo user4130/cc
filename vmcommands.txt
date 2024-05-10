@@ -1,0 +1,34 @@
+open virtual box 
+>click on new
+Name: VM1
+Type: Linux
+Version: ubuntu 64 bit
+
+>NEXT..........
+use existing hard disk
++folder=ubuntu
+
+same for VM2
+=============================
+>File
+>Preferances
+>Network
+>+NAT NETWOEK
+==============================
+>click on VM1
+>Setting
+>Network
+attached on NAT NETWORK 
+okkk
+same for vm2
+==============================
+LOGIN: Vagrant
+Password: Vagrant
+==============================
+ip config
+ls
+touch shruti.txt
+cat shruti.txt
+nano shruti.txt
+scp shruti.txt vagrant@ip_address:/home/vagrant
+==================================================

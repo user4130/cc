@@ -1,0 +1,9 @@
+FROM node:alpine
+COPY . /docker_wad
+CMD node /docker_wad/index.js
+---------------------------------
+docker -version
+node script.js
+docker built -t docker_wad
+deocker images
+---------------------------------
